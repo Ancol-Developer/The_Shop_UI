@@ -15,6 +15,7 @@
 .hearder__navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
 
 .hearder__navbar-item,
@@ -29,6 +30,9 @@
 .hearder_navbar-item-link:hover{
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
+}
+.hearder__navbar-item--has-qr:hover .header__qr {
+    display: block;
 }
 .hearder__navbar-item--strong{
     font-weight: 400;
@@ -47,4 +51,45 @@
 .header__navbar-icon-link{
     color: var(--white-color);
     text-decoration: none;
+}
+
+/* Header QR code */
+.header__qr{
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 120%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -16px;
+}
+
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-apps{
+    width: 100%;
+    display: flex;
+}
+.header__qr-link :nth-child(1){
+    margin-left: 11px;
+}
+.header__qr-link :nth-child(2) {
+    margin-right: 11px;
+}
+.header__qr-download-img{
+    height: 15px;
 }

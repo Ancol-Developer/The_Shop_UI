@@ -121,25 +121,56 @@
 }
 
 .header__notify-items{
+    display: flex;
+}
+
+.header__notify-items :hover{
+    background-color: #f7f7f7;
+}
+
+.header__notify-items--viewed{
 
 }
 
 .header__notify-link{
     display: flex;
+    padding: 12px;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(238,75,43,0.1);
 }
 
 .header__notify-img{
     width: 48px;
+    object-fit: contain;
 }
 
 .header__notify-body{
-
+    margin-left: 12px;
 }
 
 .header__notify-name{
-
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
 }
 
 .header__notify-desription{
-
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #756f6e;
 }
+
+.header_notify-footer{
+    text-align: center;
+    padding: 12px 30px;
+}
+
+.header_notify-footer-btn{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 16px 30px;
+}
+

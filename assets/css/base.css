@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --boder-color: #dbdbdb;
 }
 
 * {
@@ -45,12 +46,47 @@ html {
 }
 
 .modal__body{
-    background-color: var(--white-color);
     margin: auto;
     z-index: 1;
-    border-radius: 5%;
 }
 
+/* Button style */
+.btn{
+    min-width: 142px;
+    min-height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-normal:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn--disabled{
+    color: #ccc;
+    cursor: default;
+    background-color: #999;
+}
+
+.btn.btn--size-s{
+    height: 32px;  
+    padding: 0 8px;
+    font-size: 1.2rem; 
+}
 /* Animation */
 @keyframes fadeIn{
     from{

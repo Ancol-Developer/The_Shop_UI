@@ -32,6 +32,10 @@
     display: none;
 }
 
+.hearder__navbar-user-item--separate{
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
 .hearder__navbar-user-menu::before{
     content: "";
     border-width: 20px 27px;
@@ -84,7 +88,7 @@
 }
 
 .hearder__navbar-user-name{
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -92,7 +96,7 @@
 
 .hearder__navbar-item,
 .hearder_navbar-item-link{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration:none;
     font-weight:300;
@@ -129,6 +133,10 @@
 .header__navbar-icon-link{
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2){
+    margin-left: 3px;
 }
 
 /* Header QR code */
@@ -181,10 +189,11 @@
     border: 1px solid #d3d3d3;
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: top right;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity,transform;
     display: none;
+    border-radius: 2px;
 }
 
 .header__notify::before{
@@ -443,6 +452,11 @@
 
 .header__logo{
     width: 200px;
+}
+
+.header__logo-link{
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__logo-img{

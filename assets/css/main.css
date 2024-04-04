@@ -594,7 +594,15 @@
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--text-color);
+    max-height: 4rem;
     margin: 0;
+    flex: 1;
+    padding-right: 16px;
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .header__cart-item-price{

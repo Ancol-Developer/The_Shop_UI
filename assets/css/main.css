@@ -1155,46 +1155,6 @@ i.home-product-item__like-icon-fill{
     font-weight: 600;
 }
 
-/* Pagination */
-.pagination{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-}
 
-.pagination-item{
-    margin: 0 12px;
-}
 
-.pagination-item--active .pagination-item__link{
-    background-color: var(--primary-color);
-    color: var(--white-color);
-}
-
-.pagination-item--active .pagination-item__link:hover{
-    background-color: #ed5c3f;
-}
-
-.pagination-item__link{
-    --height:30px;
-    display: block;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 300;
-    color: #939393;
-    text-align: center;
-    line-height: var(--height);
-    min-width: 40px;
-    height: var(--height);
-    border-radius: 2px;
-}
-
-.home-product__pagination{
-    margin: 48px 0 32px 0;
-}
-
-.pagination-item__icon{
-
-}
 

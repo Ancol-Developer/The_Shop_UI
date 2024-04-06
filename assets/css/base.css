@@ -201,3 +201,116 @@ html {
 .select-input__link:hover{
     color: var(--primary-color);
 }
+
+/* Pagination */
+.pagination{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item{
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover{
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link{
+    --height:30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    text-align: center;
+    line-height: var(--height);
+    min-width: 40px;
+    height: var(--height);
+    border-radius: 2px;
+}
+
+.home-product__pagination{
+    margin: 48px 0 32px 0;
+}
+
+/* Footer */
+.footer{
+    padding-top: 16px;
+    border-top: 4px solid var(--primary-color) ;
+}
+
+.footer__heading{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item__link{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 6px 0;
+    color: #737373;
+    align-items: center;
+}
+
+.footer-item__link:hover{
+    color: var(--primary-color);
+}
+
+.footer-item__icon{
+    margin: -1px 8px 0 0 ;
+    font-size: 1.6rem;
+}
+
+.footer__download{
+    display: flex;
+}
+
+.footer__download-QR{
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--boder-color);
+}
+
+.footer__download-apps{
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__download-app-img{
+    height: 16px;
+}
+
+.footer__download-apps-link{
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer__bottom{
+    background-color: #F5F5F5;
+    padding: 8px 0;
+    margin-top: 36px;
+}
+
+.footer__text{
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #737373;
+}
